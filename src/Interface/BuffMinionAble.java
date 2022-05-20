@@ -2,6 +2,6 @@ package Interface;
 
 import object.basecard.Minion;
 
-public interface BuffMinion {
+public interface BuffMinionAble {
 	public void cast(Minion target);
 }

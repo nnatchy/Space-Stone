@@ -1,10 +1,10 @@
 package object.spells;
 
-import Interface.AttackMinion;
+import Interface.AttackMinionAble;
 import object.basecard.Minion;
 import object.basecard.Spell;
 
-public class Firerings extends Spell implements AttackMinion {
+public class Firerings extends Spell implements AttackMinionAble {
 	public Firerings() {
 		super("Fire Rings", "REDUCE 1 HEALTH OF ALL OPPONENT MINIONS", 2);
 		// TODO Auto-generated constructor stub

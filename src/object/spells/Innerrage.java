@@ -1,10 +1,10 @@
 package object.spells;
 
-import Interface.AttackMinion;
+import Interface.AttackMinionAble;
 import object.basecard.Minion;
 import object.basecard.Spell;
 
-public class Innerrage extends Spell implements AttackMinion {
+public class Innerrage extends Spell implements AttackMinionAble {
 
 	public Innerrage() {
 		super("Inner Rage", "SET MINION ATTACK EQUAL TO THEIR HEALTH", 1);

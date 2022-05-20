@@ -1,11 +1,11 @@
 package object.spells;
 
-import Interface.BuffMinion;
+import Interface.BuffMinionAble;
 import Logic.GameLogic;
 import object.basecard.Minion;
 import object.basecard.Spell;
 
-public class Bindingheal extends Spell implements BuffMinion {
+public class Bindingheal extends Spell implements BuffMinionAble {
 	public Bindingheal() {
 		super("Binding Heal", "HEAL 5 HEALTH OF THE TARGET AND YOUR HERO", 2);
 		// TODO Auto-generated constructor stub

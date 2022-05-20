@@ -1,10 +1,10 @@
 package object.spells;
 
-import Interface.BuffMinion;
+import Interface.BuffMinionAble;
 import object.basecard.Minion;
 import object.basecard.Spell;
 
-public class Heal extends Spell implements BuffMinion {
+public class Heal extends Spell implements BuffMinionAble {
 	public Heal() {
 		super("Heal", "HEAL 2 HEALTH OF THE TARGET", 1);
 		// TODO Auto-generated constructor stub

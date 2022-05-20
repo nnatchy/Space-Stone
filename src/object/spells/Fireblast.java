@@ -1,10 +1,10 @@
 package object.spells;
 
-import Interface.AttackMinion;
+import Interface.AttackMinionAble;
 import object.basecard.Minion;
 import object.basecard.Spell;
 
-public class Fireblast extends Spell implements AttackMinion {
+public class Fireblast extends Spell implements AttackMinionAble {
 
 	public Fireblast() {
 		super("Fireblast", "REDUCE 1 HEALTH OF THE TARGET", 1);

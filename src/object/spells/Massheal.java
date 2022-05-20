@@ -1,10 +1,10 @@
 package object.spells;
 
-import Interface.BuffMinion;
+import Interface.BuffMinionAble;
 import object.basecard.Minion;
 import object.basecard.Spell;
 
-public class Massheal extends Spell implements BuffMinion {
+public class Massheal extends Spell implements BuffMinionAble {
 
 	public Massheal() {
 		super("Mass Heal", "HEAL 2 HEALTH OF ALL ALLY MINIONS", 2);

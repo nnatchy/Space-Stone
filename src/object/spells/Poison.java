@@ -1,10 +1,10 @@
 package object.spells;
 
-import Interface.AttackMinion;
+import Interface.AttackMinionAble;
 import object.basecard.Minion;
 import object.basecard.Spell;
 
-public class Poison extends Spell implements AttackMinion {
+public class Poison extends Spell implements AttackMinionAble {
 
 	public Poison() {
 		super("Poison", "REDUCE HEALTH OF ALL OPPNENT MINIONS BY TARGET MINION ATTACK THEN DESTROY THAT MINION ", 3);

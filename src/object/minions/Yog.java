@@ -1,11 +1,11 @@
 package object.minions;
 
-import Interface.AttackMinion;
+import Interface.AttackMinionAble;
 import object.basecard.Minion;
 import object.spells.Doom;
 import player.Player;
 
-public class Yog extends Minion implements AttackMinion {
+public class Yog extends Minion implements AttackMinionAble {
 
 	public Yog() {
 		super("Yog", "MYSTERIOUS CREATURE\nDESTROY ALL MINION WHEN ATTACK CANNOT INFLICT DAMAGE", 0, 30, 3);

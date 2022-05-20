@@ -1,10 +1,10 @@
 package object.spells;
 
-import Interface.BuffMinion;
+import Interface.BuffMinionAble;
 import object.basecard.Minion;
 import object.basecard.Spell;
 
-public class Buff extends Spell implements BuffMinion {
+public class Buff extends Spell implements BuffMinionAble {
 
 	public Buff() {
 		super("Buff", "INCREASE 1 ATTACK AND 2 HEALTH OF THE TARGET", 1);

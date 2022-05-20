@@ -1,12 +1,12 @@
 package object.spells;
 
-import Interface.SpawnMinion;
+import Interface.SpawnMinionAble;
 import Logic.GameLogic;
 import object.basecard.Spell;
 import object.minions.Dragon;
 import player.Player;
 
-public class Legend extends Spell implements SpawnMinion {
+public class Legend extends Spell implements SpawnMinionAble {
 
 	public Legend() {
 		super("Legend", "SUMMON 12 HEALTH AND 12 ATTACK MINION", 3);

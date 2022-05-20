@@ -1,5 +1,5 @@
 package Interface;
 
-public interface SpawnMinion {
+public interface SpawnMinionAble {
 	public void cast();
 }

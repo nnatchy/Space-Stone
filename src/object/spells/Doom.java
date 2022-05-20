@@ -2,11 +2,11 @@ package object.spells;
 
 import java.util.ArrayList;
 
-import Interface.AttackMinion;
+import Interface.AttackMinionAble;
 import object.basecard.Minion;
 import object.basecard.Spell;
 
-public class Doom extends Spell implements AttackMinion {
+public class Doom extends Spell implements AttackMinionAble {
 
 	public Doom() {
 		super("Doom", "DESTROY ALL MINIONS IN TARGET PLAYER FIELD", 3);

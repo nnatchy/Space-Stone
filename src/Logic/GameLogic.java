@@ -2,11 +2,11 @@ package Logic;
 
 import java.util.ArrayList;
 
-import Interface.BuffMinion;
-import Interface.SpawnMinion;
+import Interface.BuffMinionAble;
+import Interface.SpawnMinionAble;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import Interface.AttackMinion;
+import Interface.AttackMinionAble;
 import object.basecard.Minion;
 import object.basecard.Spell;
 import object.minions.*;
@@ -150,14 +150,14 @@ public class GameLogic {
 					if (buffSpells.contains(spell.getName())) {
 						if (player.getMinionBoard().size() != 0) {
 							Minion healMinion = player.getMinionBoard().get(indexPlayerOne);
-							if (spell instanceof BuffMinion) {
-								((BuffMinion) spell).cast(healMinion);
+							if (spell instanceof BuffMinionAble) {
+								((BuffMinionAble) spell).cast(healMinion);
 							} else {
 								if (playerTwo.getMinionBoard().size() == 0) {
-									((AttackMinion) spell).cast(healMinion);
+									((AttackMinionAble) spell).cast(healMinion);
 								} else {
 									Minion targetMinion = playerTwo.getMinionBoard().get(indexPlayerTwo);
-									((AttackMinion) spell).cast(targetMinion);
+									((AttackMinionAble) spell).cast(targetMinion);
 								}
 							}
 						} else {
@@ -169,15 +169,15 @@ public class GameLogic {
 						}
 						// Check Void spells
 					} else if (voidSpells.contains(spell.getName())) {
-						if (spell instanceof SpawnMinion) {
-							((SpawnMinion) spell).cast();
+						if (spell instanceof SpawnMinionAble) {
+							((SpawnMinionAble) spell).cast();
 						} else {
 							Boink boink = new Boink();
 							boink.cast();
 						}
 					} else {
 						Minion target = playerTwo.getMinionBoard().get(indexPlayerTwo);
-						((AttackMinion) spell).cast(target);
+						((AttackMinionAble) spell).cast(target);
 					}
 				} else {
 					// Player 2
@@ -185,14 +185,14 @@ public class GameLogic {
 					if (buffSpells.contains(spell.getName())) {
 						if (player.getMinionBoard().size() != 0) {
 							Minion healMinion = player.getMinionBoard().get(indexPlayerTwo);
-							if (spell instanceof BuffMinion) {
-								((BuffMinion) spell).cast(healMinion);
+							if (spell instanceof BuffMinionAble) {
+								((BuffMinionAble) spell).cast(healMinion);
 							} else {
 								if (playerOne.getMinionBoard().size() == 0) {
-									((AttackMinion) spell).cast(healMinion);
+									((AttackMinionAble) spell).cast(healMinion);
 								} else {
 									Minion targetMinion = playerTwo.getMinionBoard().get(indexPlayerOne);
-									((AttackMinion) spell).cast(targetMinion);
+									((AttackMinionAble) spell).cast(targetMinion);
 								}
 							}
 						} else {
@@ -204,15 +204,15 @@ public class GameLogic {
 						}
 						// Check Void spells
 					} else if (voidSpells.contains(spell.getName())) {
-						if (spell instanceof SpawnMinion) {
-							((SpawnMinion) spell).cast();
+						if (spell instanceof SpawnMinionAble) {
+							((SpawnMinionAble) spell).cast();
 						} else {
 							Boink boink = new Boink();
 							boink.cast();
 						}
 					} else {
 						Minion target = playerOne.getMinionBoard().get(indexPlayerOne);
-						((AttackMinion) spell).cast(target);
+						((AttackMinionAble) spell).cast(target);
 					}
 				}
 			}

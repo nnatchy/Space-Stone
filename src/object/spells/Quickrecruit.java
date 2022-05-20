@@ -1,12 +1,12 @@
 package object.spells;
 
-import Interface.SpawnMinion;
+import Interface.SpawnMinionAble;
 import Logic.GameLogic;
 import object.basecard.Spell;
 import object.minions.Gobuta;
 import player.Player;
 
-public class Quickrecruit extends Spell implements SpawnMinion {
+public class Quickrecruit extends Spell implements SpawnMinionAble {
 
 	public Quickrecruit() {
 		super("Quick Recruit", "SUMMON 1 LEVEL GOBUTA", 1);

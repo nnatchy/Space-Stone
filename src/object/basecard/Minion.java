@@ -1,9 +1,9 @@
 package object.basecard;
 
-import Interface.AttackMinion;
+import Interface.AttackMinionAble;
 import player.Player;
 
-public abstract class Minion extends Card implements AttackMinion {
+public abstract class Minion extends Card implements AttackMinionAble {
 	protected int attack;
 	protected int health;
 	protected int level;
