@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logic.SceneController">
+   <children>
+      <VBox layoutX="4.0" layoutY="-1.0" prefHeight="707.0" prefWidth="507.0" spacing="7.0">
+         <children>
+            <Label text=" Red Mage">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" prefHeight="24.0" prefWidth="363.0" text=" Skill : Fireblast / deal 1 damage " wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font></Label>
+            <Label text=" Health : 35">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="48.0" prefWidth="380.0" text=" Description : TOP TIER MAGE OF THE MAGIC TOWER" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="406.5" startX="-100.0" />
+            <Label prefHeight="25.0" prefWidth="144.0" text=" Light Paladin">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" prefHeight="20.0" prefWidth="300.0" text=" Skill : Heal / heal 2 damage" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font></Label>
+            <Label text=" Health : 50">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label text=" Description : PALADIN OF LIGHT">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="407.5" startX="-100.0" />
+            <Label text=" Ogre King">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" prefHeight="25.0" prefWidth="354.0" text=" Skill : Quickrecruit / summon Gobuta (1/3)" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font></Label>
+            <Label text=" Health : 40">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label text=" Description : KING OF OGRE HOARD">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="408.5" startX="-100.0" />
+            <Label text=" Bad Witch">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" prefHeight="25.0" prefWidth="333.0" text=" Skill : Innerage / set attack equal to health" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font></Label>
+            <Label text=" Health : 35">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label text=" Description : OUTLAW MAGICIAN">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="409.29290771484375" endY="-0.018917620182037354" startX="-100.0" />
+            <Label text=" Light Hawk">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" prefHeight="25.0" prefWidth="362.0" text=" Skill : Buff/ +1 attack and +2 health to minion" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font></Label>
+            <Label text=" Health : 40">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label text=" Description : IS THAT HAWK OR EAGLE?">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="backToMain" layoutX="9.0" layoutY="713.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="44.0" prefWidth="498.0" style="-fx-background-color: black;" text="Main Menu" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

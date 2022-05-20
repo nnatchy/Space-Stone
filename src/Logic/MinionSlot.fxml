@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="minionSlotAnchorPane" maxHeight="-Infinity" maxWidth="185.0" minWidth="185.0" onMousePressed="#click" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MinionSlotController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="63.0" layoutY="8.0" prefHeight="215.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="225.0">
+               <children>
+                  <Label fx:id="minionSlotName" alignment="CENTER" prefHeight="22.0" prefWidth="282.0" text="DOG" wrapText="true">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="9.0" prefWidth="225.0">
+               <children>
+                  <Label fx:id="minionSlotAttack" alignment="CENTER" prefHeight="28.0" prefWidth="117.0" text="Atk">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minionSlotHealth" alignment="CENTER" prefHeight="22.0" prefWidth="120.0" text="Health">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fx:id="minionSlotImage" fitHeight="115.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/MinionArt/Dog.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
